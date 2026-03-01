@@ -1,5 +1,17 @@
 # A/B Test: Ad Frequency Optimization for a Cross-Platform Mobile Game
 
+---
+
+## 📊 Interactive Dashboard
+
+> **Business users: Start here →**
+> 
+> ### 🔗 [View the Tableau Dashboard](https://public.tableau.com/views/ABtestingforaCrossPlatformMobileApp/ProblemContext)
+> 
+> *Explore the full interactive analysis — Executive Summary, ARPU trends, retention guardrails, platform & regional breakdowns.*
+
+---
+
 ## Overview
 End-to-end A/B test analysis designed to identify the optimal ad frequency 
 for a mobile game, maximizing revenue (ARPU) without harming user retention 
@@ -37,6 +49,7 @@ Find the optimal ad frequency that:
 ---
 
 ## Project Structure
+
 ```
 ├── README.md
 ├── sql/
@@ -57,7 +70,6 @@ Find the optimal ad frequency that:
 ## Methodology
 
 ### Stage 1 & 2: SQL Data Pipeline (BigQuery)
-## SQL Pipeline (BigQuery)
 
 The analysis follows an 8-step SQL pipeline:
 
@@ -72,8 +84,8 @@ The analysis follows an 8-step SQL pipeline:
 | `07_platform_breakdown.sql` | Platform-level (Android/iOS) aggregations by cohort |
 | `08_region_breakdown.sql` | Region-level aggregations by cohort |
 
-
 ### Stage 3: Statistical Testing (Python)
+
 Applied a **tiered threshold framework**:
 
 | Metric | If NOT Significant (p ≥ 0.05) | If Significant (p < 0.05) |
@@ -95,6 +107,7 @@ This correctly penalizes variants with *proven* engagement damage while
 rewarding variants with no statistically proven harm.
 
 ### Stage 4: Tableau Dashboards
+
 Interactive story built across 6 dashboards:
 1. Executive Summary
 2. Problem & Context
@@ -135,6 +148,7 @@ Interactive story built across 6 dashboards:
 ---
 
 ## Final Recommendation
+
 **Deploy xHigh on iOS globally and in Europe.**  
 Keep control configuration on Android and in all other regions until 
 further testing or variant tuning.
@@ -155,13 +169,8 @@ over fixed frequency rules and adds unnecessary operational complexity.
 
 ---
 
-## Dashboard
-View the interactive Tableau dashboard here:  
-🔗 [A/B Testing for a Cross-Platform Mobile App](https://public.tableau.com/views/ABtestingforaCrossPlatformMobileApp/ProblemContext)
-
----
-
 ## Author
+
 **Vaibhav Kumar**  
 Data Analyst | Paris, France  
 [LinkedIn](https://www.linkedin.com/in/vaibhav-kumar1805/) | [Tableau Public](https://public.tableau.com/app/profile/vaibhav.kumar1063)
