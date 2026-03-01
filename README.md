@@ -37,19 +37,20 @@ Find the optimal ad frequency that:
 ---
 
 ## Project Structure
+```
 ├── README.md
 ├── sql/
-│ ├── 01_data_profiling.sql
-│ ├── 02_data_cleaning.sql
-│ └── 03_cleaned_session_view.sql
-│ └── 04_eda.sql
-│ └── 05_user_level_base_metrics.sql
-│ └── 06_user_metrics_full.sql
-│ └── 07_platform_breakdown.sql
-│ └── 08_region_breakdown.sql
+│   ├── 01_data_profiling.sql
+│   ├── 02_data_cleaning.sql
+│   ├── 03_cleaned_session_view.sql
+│   ├── 04_eda.sql
+│   ├── 05_user_level_base_metrics.sql
+│   ├── 06_user_metrics_full.sql
+│   ├── 07_platform_breakdown.sql
+│   └── 08_region_breakdown.sql
 ├── notebooks/
-│ └── ab_test_statistical_analysis.ipynb # Full statistical analysis in Python
-
+│   └── ab_test_statistical_analysis.ipynb
+```
 
 ---
 
